@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador</title>
+</head>
+
+<body>
+    <header>
+        <img class="logoAlura" src="images/logoAlura.png" alt="logo da Alura">
+    </header>
+
+    <main>
+        <section class="primeira_seccao">
+            <textarea class="area_texto" cols="61" rows="16" placeholder="Digite seu texto"></textarea>
+
+            <div class="informacao">
+                <img class="miniExclamacaoCinza" src="images/miniExclamacaoCinza.png" alt="Exclamação Cinza Pequena">
+                <p class="informacao_texto">Apenas letras minúsculas e sem acento</p>
+            </div>
+            <div class="botoes">
+                <button class="botoes_encriptar" onclick="btnEncriptar()">Criptografar</button>
+                <button class="botoes_descriptar" onclick="btnDesencriptar()">Descriptografar</button>
+            </div>
+        </section>
+
+        <section class="segunda_seccao">
+            <textarea class="area_resposta" cols="20" rows="5" contenteditable="true" readonly></textarea>
+            <button class="botao_copiar" display: none onclick='copiar()'>Copiar</button>
+            <div class="telaDeEspera">
+                <img class="meninoLupa" src="./images/meninoLupa.png" alt="menino com lupa">
+                <h3 class="tituloDeEspera">Nenhuma mensagem encontrada</h3>
+                <p class="textoDeEspera">Digite um texto que você deseja criptografar ou descriptografar.</p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <a class="autor" href="https://github.com/maatiko">Desenvolvido por Maatiko</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
